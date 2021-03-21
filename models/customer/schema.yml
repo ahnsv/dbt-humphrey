@@ -1,0 +1,21 @@
+
+version: 2
+
+models:
+    - name: customer_raw
+      description: "Customer Raw Table"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+          - name: full_name
+            description: "full name of customer"
+            tests:
+                - not_null
+          - name: email
+            description: "email of customer"
+            tests:
+                - not_null
+
